@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url('root.css');
+
+
+*, ::after, ::before{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+div#layout {
+    display: grid;
+    grid: 
+    "cabecera" 100px
+    "seccion" 1fr
+    "lateral" 1fr
+    "pie" 100px;
+    height: 100vh;
+}
+
+@media (min-width: 768px) {
+div#layout {
+    display: grid;
+    grid: 
+    "cabecera cabecera" 100px
+    "seccion lateral" 1fr
+    "pie pie" 100px / 60% 40%;
+    height: 100vh;
+}
+}
+
+header {
+    grid-area: cabecera;
+    background-color: aqua;
+}
+
+section {
+    grid-area: seccion;
+    background-color: beige;
+}
+
+aside {
+    grid-area: lateral;
+    background-color: blueviolet;
+}
+
+footer {
+    grid-area: pie;
+    background-color: chocolate;
+}
+
+button.submit {
+    background-color: var(--primary-00);
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+}
+
+button.submit:hover {
+    background-color: var(--primary-light-10);
+}

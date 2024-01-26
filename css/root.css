@@ -1,0 +1,35 @@
+:root{
+--primary-00: #0072CE;
+--primary-light-10: #33A4FF;
+--primary-light-20: #99D1FF;
+--primary-dark-10: #005599;
+--primary-dark-20: #003866;
+--secondary-00: #F0D146;
+--secondary-light-10: #F5E170;
+--secondary-light-20: #FAF0B7;
+--secondary-dark-10: #E2BC12;
+--secondary-dark-20: #A5890D;
+--highlight-00:#D53B00;
+--neutral-00:#8B8B8B;
+--neutral-light-10:#D9D9D9;
+--neutral-dark-10:#737373;
+
+}
+
+@font-face {
+    font-family: titulos;
+    src: url(../fonts/Poppins-Bold.woff);
+}
+@font-face {
+    font-family: textos;
+    src: url(../fonts/Poppins-Regular.woff);
+}
+
+body {
+    font-family: "textos", Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "titulos", Verdana, Geneva, Tahoma, sans-serif; 
+}
